@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="hearts-bg"></div>
 
     <div class="container">
@@ -22,14 +23,15 @@
             <button id="yes-btn" onclick="handleYesClick()">Yes</button>
             <button id="no-btn" onclick="handleNoClick()">No</button>
         </div>
-        <div id="tease-toast"></div>
+        
+        <div id="tease-toast" class="tease-toast"></div>
     </div>
 
-    <audio id="bg-music" loop autoplay muted>
+    <audio id="bg-music" loop>
         <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
     </audio>
 
-    <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
+    <button id="music-toggle" class="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
 
     <script src="script.js"></script>
 </body>
